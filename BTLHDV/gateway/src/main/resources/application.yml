@@ -1,0 +1,44 @@
+server:
+  port: 9000
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
+  instance:
+    hostname: localhost
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: ScheduleClasService
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/scheduleclass/**
+        - id: SelectedClassService
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/selectedclass/**
+        - id: StudentService
+          uri: http://localhost:8080
+          predicates:
+            - Path=/api/student/**
+        - id: SubjectService
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/subject/**
+        - id: TaskService
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/task/**
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"

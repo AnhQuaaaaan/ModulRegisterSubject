@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ad171c !important;
+    height: 50px;
+    border-color: #901317 !important;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+li {
+    display: inline;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.a-nav {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.ul-nav{
+    margin-top: 13px;
+}
+
+.main {
+    height: 100rem;
+    margin-top: 70px;
+}
+
+.header-main {
+    height: 50px;
+    background-color: #ad171c !important;
+    border-color: #901317 !important;
+    text-align: center;
+    display: flex;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.dropdown {
+    margin-top: 10px;
+}
+
+.dropdown select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.dropdown select:hover {
+    border-color: #888;
+}
+
+.dropdown select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+
+.dsach {
+    background-color: #ebebeb;
+    margin: 0;
+    font-size: 18px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-pass {
+    color: #fff;
+}
+
+.table th {
+    background-color: #ad171c !important;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+}
+
+.table th {
+    background-color: #fff;
+}
+
+.table1-container {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table1-pass {
+    color: #fff;
+}
+
+.table1 th {
+    background-color: #ad171c !important;
+}
+
+.table1 th,
+.table1 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+}
+
+.table1 th {
+    background-color: #fff;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    background-color: white;
+}
+
+.delete-button:hover {
+    background-color: bisque;
+}

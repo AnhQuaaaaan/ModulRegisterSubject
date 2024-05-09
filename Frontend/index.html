@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/tkb.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container1">
+    <div class="header">
+      <div class="nav">
+        <ul class="ul-nav">
+          <li class="li-nav">
+            <a class="a-nav" href="#">Trang chủ</a>
+          </li>
+          <li class="li-nav"></li>
+          <a class="a-nav" href="#">Thông tin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="header-main">
+        <p style="margin-top: 14px;" onclick="load()">ĐĂNG KÝ MÔN HỌC</p>
+      </div>
+      <div class="dropdown">
+        <select id="myDropdown" onchange="selectItem()">
+          <option value="Mục 1">Lọc theo môn học</option>
+          <option value="Mục 2">lọc theo lớp</option>
+          <option value="Mục 3">Lọc theo khoa quản lý môn học</option>
+        </select>
+      </div>
+      <div class="table-container">
+        <table class="table1">
+          <thead>
+            <tr class="table-pass">
+              <th></th>
+              <th>Mã MH</th>
+              <th>Tên môn học</th>
+              <th>Tên giảng viên</th>
+              <th>Nhóm</th>
+              <th>Số TC</th>
+              <th>Số lượng</th>
+              <th>Còn lại</th>
+              <th>Thời khoá biểu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <p class="dsach">Danh sách môn học đã đăng ký:</p>
+        <table class="table">
+          <thead>
+            <tr class="table-pass">
+              <th>Xóa</th>
+              <th>Mã MH</th>
+              <th>Tên môn học</th>
+              <th>Nhóm</th>
+              <th>Số TC</th>
+              <th>Ngày đăng ký</th>
+              <th>Lịch học</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+              <td>No Data</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-responsive table-container">
+        <p class="dsach">Thời Khóa Biểu:</p>
+        <table class="table table-bordered text-center table-tkb">
+          <thead>
+            <tr class="table-pass">
+              <th>Giờ học</th>
+              <th>Thứ 2</th>
+              <th>Thứ 3</th>
+              <th>Thứ 4</th>
+              <th>Thứ 5</th>
+              <th>Thứ 6</th>
+              <th>Thứ 7</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="hang1">
+              <td class="align-middle text-nowrap">07:00 - 10:00</td>
+              <td class="hang1cot2">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang1cot3">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+
+              <td class="hang1cot4">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang1cot5">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang1cot6">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang1cot7">
+                <span
+                  class="-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+            </tr>
+            <tr id="hang2">
+              <td class="align-middle text-nowrap">10:00 - 12:00</td>
+              <td class="hang2cot2">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang2cot3">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+
+              <td class="hang2cot4">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang2cot5">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang2cot6">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang2cot7">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+            </tr>
+
+            <tr id="hang3">
+              <td class="align-middle text-nowrap">13:00 - 15:00</td>
+              <td class="hang3cot2">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang3cot3"></td>
+              <td class="hang3cot4">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang3cot5">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang3cot6">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang3cot7"></td>
+            </tr>
+
+            <tr id="hang4">
+              <td class="align-middle text-nowrap">15:00 - 18:00</td>
+              <td class="hang4cot2">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+              </td>
+              <td class="hang4cot3">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+              </td>
+              <td class="hang4cot4">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+              </td>
+              <td class="hang4cot5">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+              </td>
+              <td class="hang4cot6">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+              </td>
+              <td class="hang4cot7">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+              </td>
+            </tr>
+
+            <tr id="hang5">
+              <td class="align-middle text-nowrap">18:00 - 20:00</td>
+              <td class="hang5cot2"></td>
+              <td class="hang5cot3">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang5cot4">
+                <span
+                  class="-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang5cot5">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+              <td class="hang5cot6"></td>
+              <td class="hang5cot7">
+                <span
+                  class="padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13"></span>
+                <div class="margin-10px-top font-size14"></div>
+                <div class="font-size13 text-light-gray"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("myDropdown").value = "Mục 1";
+
+      function selectItem() {
+        var selectedItem = document.getElementById("myDropdown").value;
+        console.log("Đã chọn:", selectedItem);
+      }
+
+    </script>
+  </div>
+  <script src="chung.js" type="text/javascript"></script>
+</body>
+
+<footer style="height: 200px;">
+
+</footer>
+
+</html>

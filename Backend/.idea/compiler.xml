@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apigateway" />
+        <module name="StudentService" />
+        <module name="SubjectService" />
+        <module name="SelectedClassService" />
+        <module name="ScheduleClassService" />
+        <module name="TaskService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateWay" target="17" />
+      <module name="ClassService" target="17" />
+      <module name="discoveryserver" target="17" />
+      <module name="gateway" target="17" />
+      <module name="ScheduleClassService (1)" target="17" />
+      <module name="ScheduleClassService (2)" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateWay" options="-parameters" />
+      <module name="ClassService" options="-parameters" />
+      <module name="ScheduleClassService" options="-parameters" />
+      <module name="ScheduleClassService (1)" options="-parameters" />
+      <module name="ScheduleClassService (2)" options="-parameters" />
+      <module name="SelectedClassService" options="-parameters" />
+      <module name="StudentService" options="-parameters" />
+      <module name="SubjectService" options="-parameters" />
+      <module name="TaskService" options="-parameters" />
+      <module name="apigateway" options="-parameters" />
+      <module name="discoveryserver" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+    </option>
+  </component>
+</project>
